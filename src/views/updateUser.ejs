@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up date user</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+    <h1 class="header-1">Udate user for database</h1>
+
+    <div class="form-edit-user">
+        <form action="/updateUser" method="POST">
+            <div class="filed-input">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" value="<%=data.fisrtname %>"><br>
+            </div>
+            <div class="filed-input">
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" value="<%=data.lastname %>"><br>
+            </div>
+            <div class="filed-input">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" value="<%=data.email %>"><br>
+            </div>
+            <div class="filed-input">
+                <label for="address">Adress:</label><br>
+                <input type="text" id="adress" name="adress" value="<%=data.address %>"><br>
+            </div>
+            <input type="text" hidden value="<%=data.id %>" name="id">
+            <div>
+                <button class="btn-submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

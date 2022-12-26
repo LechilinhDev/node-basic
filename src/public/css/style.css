@@ -72,3 +72,15 @@ tr:nth-child(even) {
 .form-edit-user {
     text-align: center;
 }
+
+.upload-file-container {
+    padding: 15px;
+}
+
+.upload-file-container label {
+    display: block;
+}
+
+.btn-save {
+    margin: 5px 0;
+}

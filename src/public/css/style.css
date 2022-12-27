@@ -84,3 +84,8 @@ tr:nth-child(even) {
 .btn-save {
     margin: 5px 0;
 }
+
+.title-404 {
+    text-align: center;
+    align-items: center;
+}
